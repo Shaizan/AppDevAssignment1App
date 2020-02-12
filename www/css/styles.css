@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: antiquewhite;
+     border-color: whitesmoke;
+        border-style: solid;
+   
+    border-width: 3px;
+}
+.navbar-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.navbar{
+    background-color: bisque;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: whitesmoke;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.navbar .title{
+    border-right: medium solid white;
+    border-left: medium solid white;
+    padding-top: 7%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+.navbar .right{
+    border-left: medium solid white;
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
+.navbar .left{
+    border-right: medium solid white;
+    padding-top: 7%;
+    padding-bottom: 4%;
+}
+
+.greeting{
+    text-align: center;
+    margin-top: 4vh;
+    font-family: 'Dancing Script', cursive;
+}
+
+.userInput{
+    margin-right: 7vh;
+    margin-left: 7vh;
+    margin-top: 5vh
+}
+
+.newmemory { 
+    width: 75vw;
+    height: 50vh;
+    max-width: 75vw;
+    max-height: 50vh
+    border: 1px solid #999999; padding: 5px; 
+    word-wrap: break-word;
+}
+
