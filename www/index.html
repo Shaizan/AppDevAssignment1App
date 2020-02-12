@@ -12,24 +12,27 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
  <!--   <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
+
+   <link rel="stylesheet" type="text/css" href="css/framework7.bundle.min.css" /> 
+      <link rel="stylesheet" type="text/css" href="css/framework7-icons.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
     <title>Reflect</title>
 </head>
 
-<body>
-    <div class="app">
+<body >
+    <div id="app">
      <div class="view view-main">
-      <div class="page" date-name="home">
+         <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+        <div class="left"> <a href = "/memories/" class="link">memories</a></div>
+        <div class="title"><a href = "/" class="link" >reflections</a></div>
+        <div class="right"><a href = "/memories/" class="link">self</a></div>
+    </div>
+</div>
+      <div class="page" data-name="home">
        <div class="page-content">
-       
-         <div class="navbar color-theme-orange">
-            <div class="navbar-bg"></div>
-            <div class="navbar-inner">
-                <div class="left">memories</div>
-                <div class="title">reflections</div>
-                <div class="right">self</div>
-            </div>
-        </div>
+     
      
         <div class="greeting">
             <h2>Hello!</h2>
@@ -37,7 +40,9 @@
         </div>
            
        <form action="" method="post">
+           
            <div class ="userInput">
+               <input class ="title" name="title" placeholder="Title your memory">
                <textarea class="newmemory" name="newmemory" id="newmemory" rows = "40" cols = "30"></textarea>
                <div class ="tags">
                    <h4>Add some tags to this memory:</h4>
@@ -53,12 +58,11 @@
      </div>
     </div>
 
-    <script type="text/javascript" src="cordova.js"></script>
-    <script src="js/framework7.bundle.min.js"></script>
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/framework7.bundle.min.js"></script>  
     <script type="text/javascript" src="js/my_app.js"></script>
 
     
 </body>
-
 </html>

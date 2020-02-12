@@ -1,5 +1,5 @@
 var app = new Framework7({
-    root: '#app',
+    root: '#app',  
     routes: [
         {
             path: '/',
@@ -7,12 +7,19 @@ var app = new Framework7({
         },
         {
             path: '/memories/',
-            url: 'pages/memories.html'   
+            url: 'pages/memories.html'  
         }
     ]
                          
-})
+});
 
+var mainView = app.views.create(".view-main");
+
+/*
+$(".left").on("click",function(){
+    router.navigate(memories'')
+     //mainView.router.navigate({ name: '/memories/' })
+})
 
 
 $(document).ready(function(){
@@ -28,3 +35,4 @@ $(document).ready(function(){
 
     
 })
+*/
