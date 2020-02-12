@@ -8,26 +8,25 @@
 
 body{
     background-color: antiquewhite;
-     border-color: whitesmoke;
-        border-style: solid;
-   
+    border-color: whitesmoke;
+    border-style: solid;
     border-width: 3px;
 }
 .navbar-inner{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;  
 }
 
 .navbar{
     background-color: bisque;
-    font-family: 'Zhi Mang Xing', cursive;
+    font-family: 'Lacquer', sans-serif;
     font-size: 100%;
     border-style: solid;
     border-width: 3px;
     border-color: whitesmoke;
     border-radius: 4px;
     text-align: center;
+    margin-top: 1vh;
 }
 
 .navbar .title{
@@ -35,7 +34,7 @@ body{
     border-left: medium solid white;
     padding-top: 7%;
     padding-bottom: 4%;
-    text-align: center;
+   
 }
 
 .navbar .right{
@@ -52,22 +51,44 @@ body{
 
 .greeting{
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 3vh;
     font-family: 'Dancing Script', cursive;
 }
 
 .userInput{
     margin-right: 7vh;
     margin-left: 7vh;
-    margin-top: 5vh
+    margin-top: 3vh
 }
 
 .newmemory { 
     width: 75vw;
     height: 50vh;
-    max-width: 75vw;
-    max-height: 50vh
     border: 1px solid #999999; padding: 5px; 
     word-wrap: break-word;
+    
 }
 
+.tags{
+    margin-top: 2vh;
+}
+.tags textarea{
+    margin-left: 2.5vh;
+    width: 65vw; 
+    
+}
+
+.tags h4{
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+.submissionbutton{
+    margin-left: 8vh;
+    margin-top: 2vh;
+    margin-bottom: 12vh;
+}
+
+.submissionbutton{
+    
+}
