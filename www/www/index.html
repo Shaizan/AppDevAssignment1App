@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+ <!--   <link rel="stylesheet" type="text/css" href="css/index.css" /> -->
+
+   <link rel="stylesheet" type="text/css" href="css/framework7.bundle.min.css" /> 
+      <link rel="stylesheet" type="text/css" href="css/framework7-icons.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
+    <title>Reflect</title>
+</head>
+
+<body >
+    <div id="app">
+     <div class="view view-main">
+         <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+        <div class="left"> <a href = "/memories/" class="link">memories</a></div>
+        <div class="title"><a href = "/" class="link" >reflections</a></div>
+        <div class="right"><a href = "/memories/" class="link">self</a></div>
+    </div>
+</div>
+      <div class="page" data-name="home">
+       <div class="page-content">
+     
+     
+        <div class="greeting">
+            <h2>Hello!</h2>
+            <h2>What are you thinking about?</h2>
+        </div>
+           
+       <form action = "/memories/" method="GET" class="form-ajax-submit-onchange" id="my-form"> 
+           <div class ="userInput">
+               <input class ="title" name="title" placeholder="Title your memory">
+               <textarea class="newmemory" name="newmemory" id="newmemory" rows = "40" cols = "30"></textarea>
+               <div class ="tags">
+                   <h4>Add some tags to this memory:</h4>
+                    <textarea class="tags" name="tags" id="tags" rows = "2" cols = "30" placeholder="Seperate tags with a comma          For example: mom, dad, grandma"></textarea>
+                </div>
+                <div class="convert-form-to-data"><input type="button" id ="rememberbtn" value="Remember this for me!"></div> 
+            </div>
+        </form>
+   
+           
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/framework7.bundle.min.js"></script>  
+    <script type="text/javascript" src="js/my_app.js"></script>
+
+    
+</body>
+</html>
