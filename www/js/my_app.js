@@ -9,6 +9,10 @@ var app = new Framework7({
         {
             path: '/memories/',
             url: 'pages/memories.html'  
+        },
+        {
+            path: '/self/',
+            url: 'pages/self.html'  
         }
     ]
                          
