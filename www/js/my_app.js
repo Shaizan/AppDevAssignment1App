@@ -1,3 +1,4 @@
+var cards = [];
 var app = new Framework7({
     root: '#app',  
     routes: [
@@ -16,31 +17,50 @@ var app = new Framework7({
 var mainView = app.views.create(".view-main");
 var $$ = Dom7;
 
-$$('.convert-form-to-data').on('click', function(){
+
+
+$$(document).on('page:init', '.page[data-name="memories"]',function(){
+    displayCards()
+    
+})
+
+
+$('body').on('submit','#my-form', function() {
+    
+    mainView.router.navigate('/memories/');
   var formData = app.form.convertToData('#my-form');
-  alert(JSON.stringify(formData));
-});
+  cards.push(app.form.convertToData('#my-form'));
+ 
+    if (true) {  
+  
+      return false;
+    } else {
+      return true;
+    }
+})
 
 
 
+
+function displayCards(){
+    var divs = "";
+    for( var i = 0; i < cards.length;++i) {
+   divs +=    "<div class='card'> <div class='card-header'><h4>" +
+            cards[i].title +
+            "</h4></div> <div class='card-content card-content-padding'>" +
+            cards[i].newmemory +
+            "</div><div class='card-footer'> Tags:<div class='tags'>'"
+           + cards[i].tags +
+              "</div></div>"
+      }
 /*
-$(".left").on("click",function(){
-    router.navigate(memories'')
-     //mainView.router.navigate({ name: '/memories/' })
-})
-
-
-$(document).ready(function(){
+  divs += "<div class='card'>"
+			+"<p>My name is: "+data[i].Name+"</p>"
+			+"<p>My job is: "+data[i].Job+"</p>"
+			+"</div>";
+      
+  
+  */
     
-    $('#rememberbtn').click(function(){
-        var newmem = $('#newmemory').val();
-        var tags = $('#tags').val();
-    
-        alert(newmem);
-        alert(tags);
-        
-    })
-
-    
-})
-*/
+  $("#cardsdisp").append(divs);
+}

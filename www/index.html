@@ -39,8 +39,7 @@
             <h2>What are you thinking about?</h2>
         </div>
            
-       <form id="my-form">
-           
+        <form id= "my-form" method="GET" class="form-ajax-submit" >
            <div class ="userInput">
                <input class ="title" name="title" placeholder="Title your memory">
                <textarea class="newmemory" name="newmemory" id="newmemory" rows = "40" cols = "30"></textarea>
@@ -48,7 +47,7 @@
                    <h4>Add some tags to this memory:</h4>
                     <textarea class="tags" name="tags" id="tags" rows = "2" cols = "30" placeholder="Seperate tags with a comma          For example: mom, dad, grandma"></textarea>
                 </div>
-                <div class="convert-form-to-data"><input type="button" id ="rememberbtn" value="Remember this for me!"></div> 
+                <div class="convert-form-to-data"><input type="submit"  id ="rememberbtn" value="Remember this for me!"></div> 
             </div>
         </form>
    
@@ -59,7 +58,7 @@
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
+<!--    <script type="text/javascript" src="cordova.js"></script>-->
     <script src="js/framework7.bundle.min.js"></script>  
     <script type="text/javascript" src="js/my_app.js"></script>
 
